@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InMove</title>
+  <link rel="icon" href="./img/logo.png" type="image/png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="./img/logo1.png" alt="Logo InMove"></div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#horario">Horário</a>
+      <a href="#espaco">Espaço</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div id="overlay"></div>
+
+  <section class="hero">
+    <div class="hero-bg">
+    <h1>Não importa a que velocidade vais... Just move</h1>
+    <button onclick="document.getElementById('servicos').scrollIntoView({behavior: 'smooth'})">Ver Serviços</button>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+
+    <div class="servico"><h3><i class="fas fa-dumbbell"></i> Sala de Musculação</h3>
+      <ul>
+        <li>Lotacão máxima de 12 pessoas</li>
+        <li>Inscrição através da App Regybox</li>
+        <li>Inscrição permitida em 3 blocos seguidos de 30 minutos</li>
+        <li>Acesso ao Treino do Dia</li>
+        <li>Avaliação física inicial (opcional)</li>
+        <li>Acesso aos balneários</li>
+      </ul>
+    </div>
+
+    <div class="servico"><h3><i class="fas fa-users"></i> Aulas de Grupo</h3>
+      <ul>
+        <li>Calistenia – horário a definir</li>
+        <li>Mobilidade – horário a definir</li>
+      </ul>
+    </div>
+
+    <div class="servico"><h3><i class="fas fa-user-check"></i> Acompanhamento Personalizado</h3>
+      <ul>
+        <li>1 a 5 treinos por semana</li>
+        <li>Treinos de 30 ou 60 minutos</li>
+        <li>Sem custo de mensalidade do ginásio (se só usares PT)</li>
+        <li>Avaliação física inicial e reavaliação periódica</li>
+        <li>Plano de treino individualizado</li>
+        <li>Acesso aos balneários</li>
+      </ul>
+    </div>
+
+    <div class="servico"><h3><i class="fas fa-apple-alt"></i> Nutrição</h3>
+      <ul>
+        <li>Avaliação física e nutricional</li>
+        <li>Primeira consulta e consultas de seguimento</li>
+        <li>Aberto à comunidade (com promoção para sócios)</li>
+      </ul>
+    </div>
+
+    <div class="servico"><h3><i class="fas fa-heartbeat"></i> Fisioterapia</h3>
+      <ul>
+        <li>Massagem desportiva</li>
+        <li>Pressoterapia</li>
+        <li>Drenagem linfática</li>
+        <li>Reeducação respiratória</li>
+      </ul>
+    </div>
+
+    <div class="servico"><h3><i class="fas fa-spa"></i> Massagens</h3>
+      <ul>
+        <li>Massagem de Relaxamento</li>
+        <li>Drenagem Linfática</li>
+        <li>Massagem Descontraturante</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="horario">
+    <h2><i class="fas fa-calendar"></i> Horário</h2>
+    <div class="horario-grid">
+      <div class="horario-card">
+        <h3>Segunda a Sexta</h3>
+        <ul><li>7h às 12h30</li><li>14h30 às 22h</li></ul>
+      </div>
+      <div class="horario-card">
+        <h3>Sábado</h3>
+        <ul><li>8h às 12h</li></ul>
+      </div>
+      <div class="horario-card">
+        <h3>Feriados</h3>
+        <ul><li>8h às 12h <span class="obs">(com exceções)</span></li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="espaco">
+    <h2><i class="fas fa-video"></i> Conhece o Espaço</h2>
+    <div class="espaco-video">
+      <video controls autoplay muted loop playsinline>
+        <source src="./videos/ginasio_video.mp4" type="video/mp4">
+        O teu navegador não suporta vídeo em HTML5.
+      </video>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2><i class="fas fa-map-marker-alt"></i> Sobre Nós</h2>
+    <div class="sobre-nos-container">
+      <p>Estamos localizados em Pedome, numa localização acessível e central:</p>
+      <p class="morada">
+        Avenida de S. Pedro, 1275 R/C<br>
+        4765-140 Pedome
+      </p>
+      <div class="mapa-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.180732383711!2d-8.385685!3d41.417366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24f17892570877%3A0x4f1fe2a280c972ca!2sIn%20Move!5e0!3m2!1spt-PT!2spt!4v1720600730945!5m2!1spt-PT!2spt" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2><i class="fas fa-phone"></i> Contacto</h2>
+    <div class="contacto-container">
+      <div class="contacto-info">
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:ola.inmove@gmail.com">ola.inmove@gmail.com</a></p>
+        <p><i class="fas fa-phone-alt"></i> <strong>Telefone:</strong> <a href="tel:+351919243320">+351 919 243 320</a></p>
+        <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/_inmove__" target="_blank">@_inmove__</a></p>
+      </div>
+      <div class="contacto-cta">
+        <p>Fala connosco diretamente!</p>
+        <a class="botao-contacto" href="https://www.instagram.com/_inmove__" target="_blank">
+          <i class="fab fa-instagram"></i> Enviar Mensagem no Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 InMove Gym. Todos os direitos reservados.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

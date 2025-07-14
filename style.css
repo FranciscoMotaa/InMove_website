@@ -1,0 +1,505 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #000;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HEADER */
+header {
+  background: #000;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  
+}
+
+.logo {
+  height: 60px;
+}
+.logo img {
+  height: 100%;
+  object-fit: contain;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fcff19;
+}
+
+/* HERO */
+.hero {
+  position: relative; /* necessário para posicionamento do fundo */
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url("img/foto_povoa.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero h1 {
+  margin-top: 250px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  font-size: 4.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 18px 48px;
+  background: #ffc300;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s;
+  animation: fadeInUp 1.6s ease forwards;
+  opacity: 0;
+  box-shadow: 0 2px 8px rgba(255, 195, 0, 0.4);
+}
+
+.hero button:hover {
+  background: #fcff19;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 20px 20px 10px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  background: rgba(20, 20, 20, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  scroll-margin-top: 100px;
+}
+
+.servico {
+  margin-bottom: 40px;
+  background-color: #181818;
+  padding: 28px 32px;
+  border-left: 6px solid #fcff19;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(252, 255, 25, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.servico:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(252, 255, 25, 0.18);
+}
+.servico h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #fcff19;
+  font-family: "Bebas Neue", "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.servico ul {
+  list-style: disc inside;
+  padding-left: 10px;
+}
+.servico ul li {
+  margin-bottom: 7px;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #fcff19;
+}
+
+/* HORÁRIO */
+#horario {
+  padding: 20px 20px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  background: rgba(20, 20, 20, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  scroll-margin-top: 100px;
+}
+
+#horario h2 {
+  margin-bottom: 40px;
+  font-size: 2.4rem;
+  color: #fcff19;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+.horario-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.horario-card {
+  background-color: #181818;
+  padding: 30px;
+  border-left: 6px solid #fcff19;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(252, 255, 25, 0.1);
+  transition: transform 0.2s ease;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.horario-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(252, 255, 25, 0.2);
+}
+
+.horario-card h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #fcff19;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.horario-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.horario-card li {
+  font-size: 1.1rem;
+  color: #eee;
+}
+
+.obs {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+#espaco {
+  padding: 20px 20px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  background: rgba(20, 20, 20, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  scroll-margin-top: 100px;
+  text-align: center;
+}
+
+#espaco h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #fcff19;
+}
+
+.espaco-video {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 ratio */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.espaco-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+#sobre h2 {
+  text-align: center;
+}
+
+.sobre-nos-container {
+  text-align: center;
+}
+
+.morada {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  border: 2px solid #fcff19;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(252, 255, 25, 0.15);
+}
+
+#contacto {
+  background: rgba(20, 20, 20, 0.92);
+  border-radius: 18px;
+  padding: 20px 30px;
+  margin: 60px auto;
+  max-width: 1100px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+#contacto h2 {
+  text-align: center;
+  color: #fcff19;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.contacto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.contacto-info {
+  flex: 1;
+  min-width: 260px;
+  margin-right: 8px;
+  color: #fcff19
+}
+
+.contacto-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contacto-info a {
+  color: #fcff19;
+  text-decoration: none;
+}
+
+.contacto-info a:hover {
+  text-decoration: underline;
+}
+
+.contacto-cta {
+  flex: 1;
+  min-width: 260px;
+  text-align: center;
+}
+
+.contacto-cta p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.botao-contacto {
+  display: inline-block;
+  background-color: #fcff19;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(252, 255, 25, 0.15);
+  transition: background 0.3s ease;
+}
+
+.botao-contacto:hover {
+  background-color: #fff700;
+}
+
+/* Ícone do Instagram */
+.botao-contacto i {
+  margin-right: 8px;
+}
+
+
+
+/* FOOTER */
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #fcff19;
+  color: #000;
+  border: none;
+  padding: 12px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(252, 255, 25, 0.2);
+  z-index: 1000;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #fff700;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  background-color: #fcff19;
+  height: 3px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+/* Menu mobile por padrão escondido */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+#overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    background: #000;
+    height: 100%;
+    width: 250px;
+    padding: 80px 30px;
+    gap: 24px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  #overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+  }
+
+  #overlay.active {
+    display: block;
+  }
+
+  .hero {
+    height: 100vh;
+    padding: 100px 10px 0;
+    box-sizing: border-box;
+  }
+  .hero h1 {
+    font-size: 2.5rem;           /* Reduz o tamanho do texto */
+    margin-top: 250px;            /* Espaço suficiente no topo */
+    padding: 0 10px;             /* Evita que encoste às bordas */
+    line-height: 1.2;            /* Dá mais ar entre linhas */
+  }
+
+  .hero button {
+    margin-top: 20px;            /* Espaço entre texto e botão */
+    padding: 14px 30px;          /* Botão mais compacto */
+    font-size: 1rem;
+  }
+  .hero-bg {
+    background-position: center; /* Mantém o fundo centralizado */
+    background-size: cover;      /* Garante que o fundo cubra toda a área */
+    height: 100%;
+  }
+}
+
+
+
