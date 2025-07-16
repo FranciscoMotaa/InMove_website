@@ -474,7 +474,7 @@ footer {
   }
 
   .hero {
-    margin-top: 90px; /* ajuste este valor conforme a altura do seu header */
+    margin-top: 10px; /* ajuste este valor conforme a altura do seu header */
     height: auto;
     min-height: unset;
     padding: 0 0 0 0;
