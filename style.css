@@ -489,7 +489,7 @@ footer {
     position: relative;
     width: 98vw;
     max-width: 500px;
-    height: 450px;
+    height: 515px;
     margin: 30px auto 0 auto;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -503,10 +503,10 @@ footer {
   }
   .hero h1,
   .hero button {
-    position: static;
+    position: center;
     font-size: 2.5rem;
     width: 80%;
-    max-width: 95vw;
+    max-width: 90vw;
     margin: 0 auto;
     left: unset;
     top: unset;
