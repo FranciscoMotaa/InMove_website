@@ -87,3 +87,29 @@ function changeImage() {
 
 changeImage(); // Set initial image
 setInterval(changeImage, 6000); // Change image every 5 seconds
+
+// Carrossel premium do interior
+const carouselImgs = document.querySelectorAll('.carousel-img');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+let carouselIndex = 0;
+
+function showCarouselImg(idx) {
+  carouselImgs.forEach((img, i) => {
+    img.classList.toggle('active', i === idx);
+  });
+}
+
+if (carouselImgs.length) {
+  showCarouselImg(carouselIndex);
+
+  prevBtn.addEventListener('click', () => {
+    carouselIndex = (carouselIndex - 1 + carouselImgs.length) % carouselImgs.length;
+    showCarouselImg(carouselIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    carouselIndex = (carouselIndex + 1) % carouselImgs.length;
+    showCarouselImg(carouselIndex);
+  });
+}
