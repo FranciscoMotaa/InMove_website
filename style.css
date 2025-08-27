@@ -65,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #fcff19;
+  color: #ffff00;
 }
 
 /* HERO */
@@ -127,7 +127,7 @@ nav a:hover {
 }
 
 .hero button:hover {
-  background: #fcff19;
+  background: #ffff00;
 }
 
 /* SECTIONS */
@@ -148,19 +148,19 @@ section {
   margin-bottom: 40px;
   background-color: #181818;
   padding: 28px 32px;
-  border-left: 6px solid #fcff19;
+  border-left: 6px solid #ffff00;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(252, 255, 25, 0.08);
+  box-shadow: 0 2px 12px rgba(255, 255, 0, 0.08);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .servico:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 8px 32px rgba(252, 255, 25, 0.18);
+  box-shadow: 0 8px 32px rgba(255, 255, 0, 0.18);
 }
 .servico h3 {
   font-size: 1.8rem;
   margin-bottom: 12px;
-  color: #fcff19;
+  color: #ffff00;
   font-family: "Bebas Neue", "Poppins", sans-serif;
   letter-spacing: 1px;
 }
@@ -177,7 +177,7 @@ section {
 section h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #fcff19;
+  color: #ffff00;
 }
 
 /* HORÁRIO */
@@ -196,7 +196,7 @@ section h2 {
 #horario h2 {
   margin-bottom: 40px;
   font-size: 2.4rem;
-  color: #fcff19;
+  color: #ffff00;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
 }
@@ -211,9 +211,9 @@ section h2 {
 .horario-card {
   background-color: #181818;
   padding: 30px;
-  border-left: 6px solid #fcff19;
+  border-left: 6px solid #ffff00;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(252, 255, 25, 0.1);
+  box-shadow: 0 4px 20px rgba(255, 255, 0, 0.1);
   transition: transform 0.2s ease;
   min-width: 250px;
   max-width: 300px;
@@ -227,7 +227,7 @@ section h2 {
 
 .horario-card h3 {
   font-family: "Bebas Neue", sans-serif;
-  color: #fcff19;
+  color: #ffff00;
   font-size: 1.5rem;
   margin-bottom: 12px;
 }
@@ -298,9 +298,9 @@ section h2 {
 
 .mapa-container iframe {
   width: 100%;
-  border: 2px solid #fcff19;
+  border: 2px solid #ffff00;
   border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(252, 255, 25, 0.15);
+  box-shadow: 0 4px 16px rgba(255, 255, 0, 0.15);
 }
 
 #contacto {
@@ -314,7 +314,7 @@ section h2 {
 
 #contacto h2 {
   text-align: center;
-  color: #fcff19;
+  color: #ffff00;
   font-size: 2.2rem;
   margin-bottom: 40px;
 }
@@ -331,7 +331,7 @@ section h2 {
   flex: 1;
   min-width: 260px;
   margin-right: 8px;
-  color: #fcff19;
+  color: #ffff00;
 }
 
 .contacto-info p {
