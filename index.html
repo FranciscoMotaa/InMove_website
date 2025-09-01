@@ -45,19 +45,19 @@
 
     <div class="servico"><h3><i class="fas fa-dumbbell"></i> Sala de Musculação</h3>
       <ul>
+        <li>Instrutor de sala disponível em todo o horário de funcionamento</li>
+        <li>Sem fidelizações ou contratos</li>
         <li>Lotacão máxima de 12 pessoas</li>
         <li>Inscrição através da App Regybox</li>
-        <li>Inscrição permitida em 3 blocos seguidos de 30 minutos</li>
         <li>Acesso ao Treino do Dia</li>
-        <li>Avaliação física inicial (opcional)</li>
-        <li>Acesso aos balneários</li>
+        <li>Avaliação física inicial GRÁTIS</li>
+        <li>Acesso aos balneários GRÁTIS</li>
       </ul>
     </div>
 
     <div class="servico"><h3><i class="fas fa-users"></i> Aulas de Grupo</h3>
       <ul>
-        <li>Calistenia – horário a definir</li>
-        <li>Mobilidade – horário a definir</li>
+        <li>A definir</li>
       </ul>
     </div>
 
@@ -74,8 +74,9 @@
 
     <div class="servico"><h3><i class="fas fa-apple-alt"></i> Nutrição</h3>
       <ul>
-        <li>Avaliação física e nutricional</li>
-        <li>Primeira consulta e consultas de seguimento</li>
+        <li>Acompanhamento durante todo o processo</li>
+        <li>Sem fidelizações ou contratos</li>
+        <li>Rastreio Nutricional GRÁTIS</li>
         <li>Aberto à comunidade (com promoção para sócios)</li>
       </ul>
     </div>
@@ -94,6 +95,7 @@
         <li>Massagem de Relaxamento</li>
         <li>Drenagem Linfática</li>
         <li>Massagem Descontraturante</li>
+        <li>Massagem Pedras Quentes</li>
       </ul>
     </div>
   </section>
@@ -127,45 +129,32 @@
   </section>
 
   <section id="galeria">
-    <h2><i class="fas fa-images"></i> Galeria</h2>
-    <div class="galeria-bloco">
-      <h3>Exterior</h3>
-      <div class="galeria-grid">
-        <img src="img/1.jpg" alt="Exterior 1">
-        <img src="img/2.jpg" alt="Exterior 2">
-        <!-- Adicione mais imagens de exterior conforme necessário -->
-      </div>
-    </div>
-    <div class="galeria-bloco">
-      <h3>Interior</h3>
-      <div class="galeria-grid">
-        <img src="img/img_gym/005A1954.jpg" alt="Interior 1">
-        <img src="img/img_gym/005A1955.jpg" alt="Interior 2">
-        <!-- Adicione mais imagens de interior conforme necessário -->
-      </div>
+    <h2><i class="fas fa-images"></i> Galeria do Ginásio</h2>
+    <div class="galeria-grid">
+      <img src="img/img_webp/1.webp" alt="Ginásio 1" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/2.webp" alt="Ginásio 2" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/3.webp" alt="Ginásio 3" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/4.webp" alt="Ginásio 4" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/5.webp" alt="Ginásio 5" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/6.webp" alt="Ginásio 6" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/7.webp" alt="Ginásio 7" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/8.webp" alt="Ginásio 8" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/15.webp" alt="Ginásio 9" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/10.webp" alt="Ginásio 10" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/14.webp" alt="Ginásio 11" class="galeria-img" loading="lazy">
+      <img src="img/img_webp/13.webp" alt="Ginásio 13" class="galeria-img" loading="lazy">
+      <!-- Adicione mais imagens conforme necessário -->
     </div>
   </section>
 
-  <section id="interior-premium">
-    <h2><i class="fas fa-door-open"></i> Conheça o Interior</h2>
-    <div class="carousel-container">
-      <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
-      <div class="carousel-track">
-        <img src="img/img_gym/005A1954.jpg" alt="Interior 1" class="carousel-img active">
-        <img src="img/img_gym/005A1955.jpg" alt="Interior 2" class="carousel-img">
-        <img src="img/img_gym/005A1956.jpg" alt="Interior 3" class="carousel-img">
-        <img src="img/img_gym/005A1958.jpg" alt="Interior 4" class="carousel-img">
-        <img src="img/img_gym/005A1959.jpg" alt="Interior 5" class="carousel-img">
-        <img src="img/img_gym/005A1961.jpg" alt="Interior 6" class="carousel-img">
-        <img src="img/img_gym/005A1963.jpg" alt="Interior 7" class="carousel-img">
-        <img src="img/img_gym/005A1966.jpg" alt="Interior 8" class="carousel-img">
-        <img src="img/img_gym/005A1968.jpg" alt="Interior 9" class="carousel-img">
-        <img src="img/img_gym/005A1969.jpg" alt="Interior 10" class="carousel-img">
-        <!-- Adicione mais imagens conforme necessário -->
-      </div>
-      <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
-    </div>
-  </section>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="Imagem ampliada">
+    <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
 
   <section id="sobre">
     <h2><i class="fas fa-map-marker-alt"></i> Sobre Nós</h2>
@@ -186,7 +175,7 @@
     <div class="contacto-container">
       <div class="contacto-info">
         <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:ola.inmove@gmail.com">ola.inmove@gmail.com</a></p>
-        <p><i class="fas fa-phone-alt"></i> <strong>Telefone:</strong> <a href="tel:+351919243320">+351 919 243 320</a></p>
+        <p><i class="fas fa-phone-alt"></i> <strong>Telefone:</strong> <a href="tel:+351928316785">+351 928 316 785</a></p>
         <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/_inmove__" target="_blank">@_inmove__</a></p>
       </div>
       <div class="contacto-cta">
