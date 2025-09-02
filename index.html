@@ -1,195 +1,325 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InMove</title>
-  <link rel="icon" href="./img/logo.png" type="image/png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InMove</title>
+    <link rel="icon" href="./img/logo.png" type="image/png" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <div class="logo"><img src="./img/IN_MOVE_V1_SemFundo_.png" alt="Logo InMove"></div>
-
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <nav class="nav-links" id="nav-links">
-      <a href="#servicos">Serviços</a>
-      <a href="#horario">Horário</a>
-      <a href="#espaco">Espaço</a>
-      <a href="#sobre">Sobre nós</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
-
-  <div id="overlay"></div>
-
-  <section class="hero">
-    <div class="hero-bg">
-    <h1>Não importa a que velocidade vais, desde que não pares. <br><i>Just move...</i></h1>
-    <button onclick="document.getElementById('servicos').scrollIntoView({behavior: 'smooth'})">Ver Serviços</button>
-  </section>
-
-  <section id="servicos">
-    <h2>Serviços</h2>
-
-    <div class="servico"><h3><i class="fas fa-dumbbell"></i> Sala de Musculação</h3>
-      <ul>
-        <li>Instrutor de sala disponível em todo o horário de funcionamento</li>
-        <li>Sem fidelizações ou contratos</li>
-        <li>Lotacão máxima de 12 pessoas</li>
-        <li>Inscrição através da App Regybox</li>
-        <li>Acesso ao Treino do Dia</li>
-        <li>Avaliação física inicial GRÁTIS</li>
-        <li>Acesso aos balneários GRÁTIS</li>
-      </ul>
-    </div>
-
-    <div class="servico"><h3><i class="fas fa-users"></i> Aulas de Grupo</h3>
-      <ul>
-        <li>A definir</li>
-      </ul>
-    </div>
-
-    <div class="servico"><h3><i class="fas fa-user-check"></i> Acompanhamento Personalizado</h3>
-      <ul>
-        <li>1 a 5 treinos por semana</li>
-        <li>Treinos de 30 ou 60 minutos</li>
-        <li>Sem custo de mensalidade do ginásio (se só usares PT)</li>
-        <li>Avaliação física inicial e reavaliação periódica</li>
-        <li>Plano de treino individualizado</li>
-        <li>Acesso aos balneários</li>
-      </ul>
-    </div>
-
-    <div class="servico"><h3><i class="fas fa-apple-alt"></i> Nutrição</h3>
-      <ul>
-        <li>Acompanhamento durante todo o processo</li>
-        <li>Sem fidelizações ou contratos</li>
-        <li>Rastreio Nutricional GRÁTIS</li>
-        <li>Aberto à comunidade (com promoção para sócios)</li>
-      </ul>
-    </div>
-
-    <div class="servico"><h3><i class="fas fa-heartbeat"></i> Fisioterapia</h3>
-      <ul>
-        <li>Massagem desportiva</li>
-        <li>Pressoterapia</li>
-        <li>Drenagem linfática</li>
-        <li>Reeducação respiratória</li>
-      </ul>
-    </div>
-
-    <div class="servico"><h3><i class="fas fa-spa"></i> Massagens</h3>
-      <ul>
-        <li>Massagem de Relaxamento</li>
-        <li>Drenagem Linfática</li>
-        <li>Massagem Descontraturante</li>
-        <li>Massagem Pedras Quentes</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="horario">
-    <h2><i class="fas fa-calendar"></i> Horário</h2>
-    <div class="horario-grid">
-      <div class="horario-card">
-        <h3>Segunda a Sexta</h3>
-        <ul><li>7h às 12h30</li><li>14h30 às 22h</li></ul>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/IN_MOVE_V1_SemFundo_.png" alt="Logo InMove" />
       </div>
-      <div class="horario-card">
-        <h3>Sábado</h3>
-        <ul><li>8h às 12h</li></ul>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="horario-card">
-        <h3>Feriados</h3>
-        <ul><li>8h às 12h <span class="obs">(com exceções)</span></li></ul>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#horario">Horário</a>
+        <a href="#espaco">Espaço</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <div id="overlay"></div>
+
+    <section class="hero">
+      <div class="hero-bg">
+        <h1>
+          Não importa a que velocidade vais, desde que não pares. <br /><i
+            >Just move...</i
+          >
+        </h1>
+        <button
+          onclick="document.getElementById('servicos').scrollIntoView({behavior: 'smooth'})"
+        >
+          Ver Serviços
+        </button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="espaco">
-    <h2><i class="fas fa-video"></i> Conhece o Espaço</h2>
-    <div class="espaco-video">
-      <video controls autoplay muted loop playsinline>
-        <source src="./videos/ginasio_video.mp4" type="video/mp4">
-        O teu navegador não suporta vídeo em HTML5.
-      </video>
-    </div>
-  </section>
+    <!-- Secção de Marcar Treino Experimental -->
+    <section id="treino-experimental" class="treino-experimental">
+      <h2>Marca já o teu treino experimental!</h2>
+      <p>Experimenta sem compromisso e sente a diferença InMove.</p>
+      <a
+        href="https://shorturl.at/dCrr1"
+        target="_blank"
+        rel="noopener"
+        class="btn-treino-experimental"
+      >
+        Marcar Treino Experimental
+      </a>
+    </section>
 
-  <section id="galeria">
-    <h2><i class="fas fa-images"></i> Galeria do Ginásio</h2>
-    <div class="galeria-grid">
-      <img src="img/img_webp/1.webp" alt="Ginásio 1" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/2.webp" alt="Ginásio 2" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/3.webp" alt="Ginásio 3" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/4.webp" alt="Ginásio 4" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/5.webp" alt="Ginásio 5" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/6.webp" alt="Ginásio 6" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/7.webp" alt="Ginásio 7" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/8.webp" alt="Ginásio 8" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/15.webp" alt="Ginásio 9" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/10.webp" alt="Ginásio 10" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/14.webp" alt="Ginásio 11" class="galeria-img" loading="lazy">
-      <img src="img/img_webp/13.webp" alt="Ginásio 13" class="galeria-img" loading="lazy">
-      <!-- Adicione mais imagens conforme necessário -->
-    </div>
-  </section>
+    <section id="servicos">
+      <h2>Serviços</h2>
 
-  <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-img" src="" alt="Imagem ampliada">
-    <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
-    <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
-  </div>
-
-
-  <section id="sobre">
-    <h2><i class="fas fa-map-marker-alt"></i> Sobre Nós</h2>
-    <div class="sobre-nos-container">
-      <p>Estamos localizados em Pedome, numa localização acessível e central:</p>
-      <p class="morada">
-        Avenida de S. Pedro, 1275 R/C<br>
-        4765-140 Pedome
-      </p>
-      <div class="mapa-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.180732383711!2d-8.385685!3d41.417366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24f17892570877%3A0x4f1fe2a280c972ca!2sIn%20Move!5e0!3m2!1spt-PT!2spt!4v1720600730945!5m2!1spt-PT!2spt" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="servico">
+        <h3><i class="fas fa-dumbbell"></i> Sala de Musculação</h3>
+        <ul>
+          <li>
+            Instrutor de sala disponível em todo o horário de funcionamento
+          </li>
+          <li>Sem fidelizações ou contratos</li>
+          <li>Lotacão máxima de 12 pessoas</li>
+          <li>Inscrição através da App Regybox</li>
+          <li>Acesso ao Treino do Dia</li>
+          <li>Avaliação física inicial GRÁTIS</li>
+          <li>Acesso aos balneários GRÁTIS</li>
+        </ul>
       </div>
-    </div>
-  </section>
 
-  <section id="contacto">
-    <h2><i class="fas fa-phone"></i> Contacto</h2>
-    <div class="contacto-container">
-      <div class="contacto-info">
-        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:ola.inmove@gmail.com">ola.inmove@gmail.com</a></p>
-        <p><i class="fas fa-phone-alt"></i> <strong>Telefone:</strong> <a href="tel:+351928316785">+351 928 316 785</a></p>
-        <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/_inmove__" target="_blank">@_inmove__</a></p>
+      <div class="servico">
+        <h3><i class="fas fa-users"></i> Aulas de Grupo</h3>
+        <ul>
+          <li>A definir</li>
+        </ul>
       </div>
-      <div class="contacto-cta">
-        <p>Fala connosco diretamente!</p>
-        <a class="botao-contacto" href="https://www.instagram.com/_inmove__" target="_blank">
-          <i class="fab fa-instagram"></i> Enviar Mensagem no Instagram
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <footer>
-    &copy; 2025 InMove Gym. Todos os direitos reservados.
-  </footer>
-  <script src="script.js"></script>
-</body>
+      <div class="servico">
+        <h3><i class="fas fa-user-check"></i> Acompanhamento Personalizado</h3>
+        <ul>
+          <li>1 a 5 treinos por semana</li>
+          <li>Treinos de 30 ou 60 minutos</li>
+          <li>Sem custo de mensalidade do ginásio (se só usares PT)</li>
+          <li>Avaliação física inicial e reavaliação periódica</li>
+          <li>Plano de treino individualizado</li>
+          <li>Acesso aos balneários</li>
+        </ul>
+      </div>
+
+      <div class="servico">
+        <h3><i class="fas fa-apple-alt"></i> Nutrição</h3>
+        <ul>
+          <li>Acompanhamento durante todo o processo</li>
+          <li>Sem fidelizações ou contratos</li>
+          <li>Rastreio Nutricional GRÁTIS</li>
+          <li>Aberto à comunidade (com promoção para sócios)</li>
+        </ul>
+      </div>
+
+      <div class="servico">
+        <h3><i class="fas fa-heartbeat"></i> Fisioterapia</h3>
+        <ul>
+          <li>Massagem desportiva</li>
+          <li>Pressoterapia</li>
+          <li>Drenagem linfática</li>
+          <li>Reeducação respiratória</li>
+        </ul>
+      </div>
+
+      <div class="servico">
+        <h3><i class="fas fa-spa"></i> Massagens</h3>
+        <ul>
+          <li>Massagem de Relaxamento</li>
+          <li>Drenagem Linfática</li>
+          <li>Massagem Descontraturante</li>
+          <li>Massagem Pedras Quentes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="horario">
+      <h2><i class="fas fa-calendar"></i> Horário</h2>
+      <div class="horario-grid">
+        <div class="horario-card">
+          <h3>Segunda a Sexta</h3>
+          <ul>
+            <li>7h às 12h30</li>
+            <li>14h30 às 22h</li>
+          </ul>
+        </div>
+        <div class="horario-card">
+          <h3>Sábado</h3>
+          <ul>
+            <li>8h às 12h</li>
+          </ul>
+        </div>
+        <div class="horario-card">
+          <h3>Feriados</h3>
+          <ul>
+            <li>8h às 12h <span class="obs">(com exceções)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="espaco">
+      <h2><i class="fas fa-video"></i> Conhece o Espaço</h2>
+      <div class="espaco-video">
+        <video controls autoplay muted loop playsinline>
+          <source src="./videos/ginasio_video.mp4" type="video/mp4" />
+          O teu navegador não suporta vídeo em HTML5.
+        </video>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2><i class="fas fa-images"></i> Galeria do Ginásio</h2>
+      <div class="galeria-grid">
+        <img
+          src="img/img_webp/1.webp"
+          alt="Ginásio 1"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/2.webp"
+          alt="Ginásio 2"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/3.webp"
+          alt="Ginásio 3"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/4.webp"
+          alt="Ginásio 4"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/5.webp"
+          alt="Ginásio 5"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/6.webp"
+          alt="Ginásio 6"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/7.webp"
+          alt="Ginásio 7"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/8.webp"
+          alt="Ginásio 8"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/15.webp"
+          alt="Ginásio 9"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/10.webp"
+          alt="Ginásio 10"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/14.webp"
+          alt="Ginásio 11"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <img
+          src="img/img_webp/13.webp"
+          alt="Ginásio 13"
+          class="galeria-img"
+          loading="lazy"
+        />
+        <!-- Adicione mais imagens conforme necessário -->
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-img" src="" alt="Imagem ampliada" />
+      <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <section id="sobre">
+      <h2><i class="fas fa-map-marker-alt"></i> Sobre Nós</h2>
+      <div class="sobre-nos-container">
+        <p>
+          Estamos localizados em Pedome, numa localização acessível e central:
+        </p>
+        <p class="morada">
+          Avenida de S. Pedro, 1275 R/C<br />
+          4765-140 Pedome
+        </p>
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.180732383711!2d-8.385685!3d41.417366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24f17892570877%3A0x4f1fe2a280c972ca!2sIn%20Move!5e0!3m2!1spt-PT!2spt!4v1720600730945!5m2!1spt-PT!2spt"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2><i class="fas fa-phone"></i> Contacto</h2>
+      <div class="contacto-container">
+        <div class="contacto-info">
+          <p>
+            <i class="fas fa-envelope"></i> <strong>Email:</strong>
+            <a href="mailto:ola.inmove@gmail.com">ola.inmove@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i> <strong>Telefone:</strong>
+            <a href="tel:+351928316785">+351 928 316 785</a>
+          </p>
+          <p>
+            <i class="fab fa-instagram"></i> <strong>Instagram:</strong>
+            <a href="https://www.instagram.com/_inmove__" target="_blank"
+              >@_inmove__</a
+            >
+          </p>
+        </div>
+        <div class="contacto-cta">
+          <p>Fala connosco diretamente!</p>
+          <a
+            class="botao-contacto"
+            href="https://www.instagram.com/_inmove__"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i> Enviar Mensagem no Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 InMove Gym. Todos os direitos reservados.</footer>
+    <script src="script.js"></script>
+  </body>
 </html>

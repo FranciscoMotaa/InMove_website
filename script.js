@@ -31,7 +31,6 @@ scrollBtn.style.display = "none";
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
 window.addEventListener("scroll", () => {
   scrollBtn.style.display = window.scrollY > 400 ? "block" : "none";
 });

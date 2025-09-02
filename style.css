@@ -214,6 +214,23 @@ section h2 {
   right: 40px;
 }
 
+@media (max-width: 700px) {
+  .lightbox-next,
+  .lightbox-prev {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .lightbox-next {
+    right: 12px;
+    left: auto;
+  }
+  .lightbox-prev {
+    left: 12px;
+    right: auto;
+  }
+}
+
 /* BOTÃO DE TOPO */
 #scrollTopBtn {
   position: fixed;
@@ -764,11 +781,12 @@ footer {
   }
   .hero h1 {
     font-size: 2.1rem;
-    margin-top: 0;
-    margin-bottom: 18px;
+    margin-top: 60px;
+    margin-bottom: 25px;
     color: #fff;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     line-height: 1.2;
+    align-items: center;
   }
   .hero button {
     margin: 0 auto;
@@ -917,6 +935,46 @@ footer {
 }
 .carousel-btn.next {
   right: 16px;
+}
+
+/* Secção Treino Experimental */
+.treino-experimental {
+  padding: 20px 20px;
+  margin: 0 auto 60px auto;
+  background: #181818;
+  text-align: center;
+  border-radius: 18px;
+  max-width: 900px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.treino-experimental h2 {
+  color: #ffff00;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.treino-experimental p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+
+.btn-treino-experimental {
+  background: #ffff00;
+  color: #181818;
+  font-weight: bold;
+  padding: 16px 38px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(255, 255, 0, 0.1);
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.btn-treino-experimental:hover {
+  background: #ffe600;
 }
 
 @media (max-width: 900px) {
