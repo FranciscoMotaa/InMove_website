@@ -68,7 +68,7 @@ header {
 }
 .hero button {
   background: #ffff00;
-  color: #222;
+  color: #181818;
   border: none;
   border-radius: 8px;
   font-size: 1.2rem;
@@ -76,11 +76,13 @@ header {
   padding: 16px 44px;
   box-shadow: 0 2px 12px rgba(255, 255, 0, 0.1);
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .hero button:hover {
-  background: #222;
-  color: #666620bd;
+  background: #ffe600;
+  color: #181818;
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(255, 255, 0, 0.18);
 }
 
 /* SEÇÕES MELHORADAS */
@@ -719,7 +721,8 @@ section h2 {
 }
 
 .botao-contacto:hover {
-  background-color: #fff700;
+  background-color: #ffe600;
+  box-shadow: 0 6px 24px rgba(255, 255, 0, 0.18);
 }
 
 /* Ícone do Instagram */
@@ -1184,19 +1187,20 @@ footer {
 
 .btn-treino-experimental {
   background: #ffff00;
-  color: #181818;
+  color: #181818; /* Mantém o texto preto */
   font-weight: bold;
   padding: 16px 38px;
   border-radius: 15px;
   font-size: 1.2rem;
   text-decoration: none;
   box-shadow: 0 8px 32px rgba(255, 255, 0, 0.1);
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
   display: inline-block;
 }
 
 .btn-treino-experimental:hover {
   background: #ffe600;
+  color: #181818; /* Garante que no hover o texto continua preto */
   box-shadow: 0 8px 32px rgba(255, 255, 0, 0.25);
   transform: scale(1.08);
 }
